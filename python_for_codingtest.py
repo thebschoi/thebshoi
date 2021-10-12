@@ -33,4 +33,9 @@ max(data) # 5
 import math
 math.sqrt() # math.sqrt(2) = 1.414...
 
+# 아스키코드
+ord('a') # 97
 
+# 위치 찾기
+a = '123456'
+a.index('1') # 0
