@@ -16,8 +16,10 @@ data = [3,5,1,4,2]
 data.sort() # data = [1,2,3,4,5]
 # 내림차순
 data.sort(reverse=True) # data = [5,4,3,2,1]
+# sort()에서 print
+print(data.sort()) # none 이 나온다.
 
-# 원본 데이터는 그대로 두고 새로 정렬
+# sorted() : 원본 데이터는 그대로 두고 새로 정렬
 data = [3,5,1,4,2]
 # 오름차순
 sorted_data = sorted(data) # sorted_data = [1,2,3,4,5]
@@ -39,3 +41,8 @@ ord('a') # 97
 # 위치 찾기
 a = '123456'
 a.index('1') # 0
+
+# 스와프 : 리스트 내 두 원소의 위치 변경
+array = [3,5]
+array[0], array[1] = array[1], array[0]
+print(array) # [5,3]
