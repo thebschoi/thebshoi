@@ -46,3 +46,7 @@ a.index('1') # 0
 array = [3,5]
 array[0], array[1] = array[1], array[0]
 print(array) # [5,3]
+
+# 알파벳 정렬하기(오름차순)
+s = '1bc2aa3s4'
+new_s = ''.join(sorted(list(s))) # new_s : 1234aabcs
