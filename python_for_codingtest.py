@@ -50,3 +50,27 @@ print(array) # [5,3]
 # 알파벳 정렬하기(오름차순)
 s = '1bc2aa3s4'
 new_s = ''.join(sorted(list(s))) # new_s : 1234aabcs
+
+# 문자열을 n개 단위로 잘라서 list에 저장하기
+# n개로 나누어 떨어지지 않는 문자열은 마지막 나머지는 리스트에 저장 안함
+data = 'abcdefg'
+split_data = list(map(''.join, zip(*[iter(data)]*n)))
+# 나누어 떨어지지 않은 나머지까지 저장하기
+data = 'abcdefg'
+split_data = list(map(''.join, zip(*[iter(data)]*n)))
+if n * len(split_data) != len(data):
+    split_data.append(s[n * len(split_data):])
+
+# list to string : join 이용
+a = ['a', 'b', 'c', 'd', '1', '2', '3'] 
+result1 = "".join(a)
+print(result1) # abcd123
+# list에 숫자값이 포함되어 있는 경우
+b = ['a', 'b', 'c', 'd', 1, 2, 3]
+result2 = ""
+for i in b:
+    result2 += str(i)
+print(result2)
+
+# 무한대 표현
+inf = int(1e9) # 10억
